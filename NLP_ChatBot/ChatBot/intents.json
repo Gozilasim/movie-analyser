@@ -1,0 +1,304 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "ok","are you here","good morning"," good afternoon", "good evening"],
+      "responses": ["Hello! How can I assist you  today?", "Hi there, how can I help?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "good night"],
+      "responses": ["Goodbye! If you have more questions, feel free to ask.","See you!", "Have a nice day"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thank you", "Thanks a lot", "Appreciate it", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["You're welcome! Happy gardening.","Happy to help!", "Any time!", "My pleasure"]
+    },
+    
+    {
+        "tag": "noanswer",
+        "patterns": [],
+        "responses": ["Sorry, can't understand you", "Not sure I understand"],
+        "context": [""]
+    },
+
+    {
+      "tag": "intro",
+      "patterns": [
+        "What can this app do?",
+        "How to use this app?",
+        "App features",
+        "1"
+      ],
+      "responses": [
+        "Welcome to our movie genre identifier app! You can enter a movie description in the text field and click the button to discover its genre"
+      ]
+    },
+    {
+      "tag": "how_to_use",
+      "patterns": [
+        "How do I use the app?",
+        "Using the movie identifier",
+        "Step-by-step guide",
+        "how to use",
+        "2"
+      ],
+      "responses": [
+        "Using our app is simple! Just type the description of a movie in the provided text field and press the 'Identify' button. We'll analyze the description and display the movie's genre."
+      ]
+    },
+    {
+      "tag": "identify_movie_genre",
+      "patterns": [
+        "Identify movie genre",
+        "What genre is this movie?",
+        "Movie genre"
+      ],
+      "responses": [
+        "You can find out the genre of a movie by describing it in the text field and clicking the 'Identify' button. Give it a try!"
+      ]
+    },
+
+    {
+      "tag": "app_explanation",
+      "patterns": [
+        "How does this app work?",
+        "Can you explain how this app works?",
+        "What does this app do?",
+        "3"
+      ],
+      "responses": [
+        "This app analyzes movie descriptions provided by users. It utilizes Natural Language Processing (NLP) techniques to classify the genre of movies based on their plot descriptions. The app then displays the predicted genres such as action, comedy, drama, etc."
+      ]
+    },
+    {
+      "tag": "techniques_used",
+      "patterns": [
+        "What techniques are used in this app?",
+        "Can you tell me about the techniques employed in this app?",
+        "How does this app process the data?"
+      ],
+      "responses": [
+        "This app uses various Natural Language Processing (NLP) techniques such as text cleaning, TF-IDF vectorization for feature extraction, and Multinomial Naive Bayes for classification. It preprocesses the movie plot descriptions by cleaning the text, converting it into numerical features using TF-IDF, and then employs a Multinomial Naive Bayes classifier to predict movie genres based on these features."
+      ]
+    },
+
+    {
+      "tag": "free_mode",
+      "patterns": [
+        "What features are available in the free mode?",
+        "Tell me about the free plan.",
+        "What can I do with the free version?"
+      ],
+      "responses": [
+        "In the free mode, you can input movie descriptions and receive genre predictions based on the provided plot. The free plan offers basic functionalities such as analyzing movie genres using the available NLP techniques."
+      ]
+    },
+    {
+      "tag": "pro_mode",
+      "patterns": [
+        "What does the pro mode offer?",
+        "Tell me about the features in the pro version.",
+        "What are the benefits of upgrading to pro?"
+      ],
+      "responses": [
+        "Our Pro mode is currently under development, aiming to introduce advanced features like enhanced genre classification accuracy, personalized recommendations, additional NLP techniques, and more. Stay tuned for the upcoming features and improvements!"
+      ]
+    },
+    {
+      "tag": "mode_comparison",
+      "patterns": [
+        "What is the difference between free and pro modes?",
+        "Compare free and pro versions.",
+        "How does the pro version differ from the free one?"
+      ],
+      "responses": [
+        "The free mode allows basic movie genre predictions using NLP techniques. Our Pro mode, currently in development, will introduce advanced features such as improved accuracy, personalized recommendations, and additional NLP techniques to enhance the movie genre classification experience."
+      ]
+    },
+
+    {
+      "tag": "technical_issues",
+      "patterns": [
+        "App isn't working",
+        "Facing technical problems",
+        "App crashes",
+        "error occurred"
+      ],
+      "responses": [
+        "I apologize for the inconvenience. Please restart the app or check for updates to resolve technical issues."
+      ]
+    },
+
+    {
+      "tag": "help",
+      "patterns": [
+        "Help",
+        "I need assistance",
+        "Can you help me?"
+      ],
+      "responses": [
+        "Sure, I'm here to help! What do you need assistance with?",
+        "Of course! What can I assist you with?"
+      ]
+    },
+
+    {
+      "tag": "need_more_info",
+      "patterns": [
+        "Can you provide more information?",
+        "I want to know more"
+      ],
+      "responses": [
+        "Certainly! Please specify what information you need, and I'll do my best to assist you.",
+        "Of course! What specific details are you looking for?"
+      ]
+    },
+
+    {
+      "tag": "unknown",
+      "patterns": [],
+      "responses": ["I'm not sure I understand. Could you rephrase or ask another question about tomato plant care?","Sorry, can't understand you", "Please give me more info", "Not sure I understand"]
+    },
+
+    {
+      "tag": "jokes",
+      "patterns": [
+          "Tell me a joke",
+          "Joke",
+          "Make me laugh"
+      ],
+      "responses": [
+          "3N for what? Never gonna give you up, Never gonna let you down, Never gonna run around and desert you :)",
+          "Why don't skeletons fight each other? Because they don't have the guts!",
+          "Why do bicycles fall over? Because they are two-tired! ehe",
+          "me:print(\"Hello World\")\nOutput:Hello World\nWhy i'm so good at cooding"
+      ],
+      "context": [
+          "jokes"
+      ]
+  },
+
+  {
+    "tag": "Identity",
+    "patterns": [
+        "Who are you",
+        "what are you",
+        "what is your name",
+        "what is this"
+    ],
+    "responses": [
+        "I am assistant Bot, a Deep-Learning chatbot"
+    ]
+  },
+
+  {
+    "tag": "whatsup",
+    "patterns": [
+        "Whats up",
+        "Wazzup",
+        "How are you",
+        "sup","How you doing"
+    ],
+    "responses": [
+        "All good..What about you?"
+    ]
+  },
+
+  {
+    "tag": "haha",
+    "patterns": [
+        "haha",
+        "lol",
+        "rofl",
+        "lmao",
+        "thats funny"
+    ],
+    "responses": [
+        "Glad I could make you laugh !"
+    ]
+  },
+
+  {
+    "tag": "programmer",
+    "patterns": [
+        "Who made you",
+        "who designed you",
+        "who programmed you"
+    ],
+    "responses": [
+        "I was made by Yuan."
+    ]
+  },
+
+  {
+    "tag": "activity",
+    "patterns": [
+        "what are you doing",
+        "what are you upto"
+    ],
+    "responses": [
+        "Talking to you, of course!"
+    ]
+  },
+
+  {
+    "tag": "yuan",
+    "patterns": [
+        "who is he",
+        "who is that",
+        "who is yuan",
+        "yuan"
+    ],
+    "responses": [
+        "Head over to his any of his social profiles to find out! \nWeb: https://fuyuanlum.wixsite.com/yuanyuan \nGithub: https://github.com/yuanyuan-qwq"
+    ]
+  },
+  {
+    "tag": "contact",
+    "patterns": [
+        "contact developer",
+        "contact yuan",
+        "contact programmer",
+        "contact creator"
+    ],
+    "responses": [
+        "i don't want to give you :) ehe"
+    ]
+  },
+  {
+    "tag": "appreciate",
+    "patterns": [
+        "You are awesome",
+        "you are the best",
+        "you are great",
+        "you are good",
+        "i love you",
+        "i like you",
+        "u are smart"
+    ],
+    "responses": [
+        "Thank you!"
+    ]
+  },
+  {
+    "tag": "suggest",
+    "patterns": [
+        "you are useless","useless","suggest","suggestions","you are bad"
+    ],
+    "responses": [
+        "Please mail your suggestions to yuanfulum@gmail.com. Thank you for helping me improve!"
+    ]
+  },
+  {
+    "tag": "age",
+    "patterns": [
+        "how old are you","when were you made","what is your age"
+    ],
+    "responses": [
+        "I was made in 2023 by yuan."
+    ]
+}
+  ]
+}
